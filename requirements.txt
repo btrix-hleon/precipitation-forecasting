@@ -1,9 +1,5 @@
-mkdocs
 pip
-python-dotenv
 ruff
--e .
-
 matplotlib==3.8.4
 keras==3.2.1
 numpy==1.26.4
