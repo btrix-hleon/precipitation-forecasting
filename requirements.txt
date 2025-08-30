@@ -3,3 +3,11 @@ pip
 python-dotenv
 ruff
 -e .
+
+matplotlib==3.8.4
+keras==3.2.1
+numpy==1.26.4
+pandas==2.2.2
+seaborn==0.13.2
+typing==4.11.0
+sklearn==1.4.2
