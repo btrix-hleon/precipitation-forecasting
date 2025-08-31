@@ -4,58 +4,50 @@
     <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
 </a>
 
-A model to predict the monthly amount of precipitation using LSTM networks.
+Implementation of a predictive model based of LSTM networks for precipitation timeseries forecasting in Cuba.
+
+**Key features**
+- Architecture: LSTM layer (24 neurons) + LSTM layer (36 neurons) + Dense (12 neurons)
+- Preprocessing: Temporal interpolation + scaling [-1,1]
+- Metrics:
+      MAE: 0.26
+      RMSE: 0.32
+      Bias: 0.05
 
 ## Project Organization
 
 ```
 ├── LICENSE            <- Open-source license if one is chosen
-├── Makefile           <- Makefile with convenience commands like `make data` or `make train`
+├── Makefile           <- Makefile with convenience commands
 ├── README.md          <- The top-level README for developers using this project.
 ├── data
-│   ├── external       <- Data from third party sources.
 │   ├── interim        <- Intermediate data that has been transformed.
 │   ├── processed      <- The final, canonical data sets for modeling.
 │   └── raw            <- The original, immutable data dump.
 │
-├── docs               <- A default mkdocs project; see www.mkdocs.org for details
-│
 ├── models             <- Trained and serialized models, model predictions, or model summaries
 │
-├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-│                         the creator's initials, and a short `-` delimited description, e.g.
-│                         `1.0-jqp-initial-data-exploration`.
+├── notebooks          <- Jupyter notebooks
 │
-├── pyproject.toml     <- Project configuration file with package metadata for 
-│                         eda and configuration for tools like black
-│
-├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-│
-├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
+├── reports         
 │   └── figures        <- Generated graphics and figures to be used in reporting
 │
-├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-│                         generated with `pip freeze > requirements.txt`
+├── requirements.txt   <- The requirements file for reproducing the analysis environment.
 │
-├── setup.cfg          <- Configuration file for flake8
-│
-└── eda   <- Source code for use in this project.
+└── src   <- Source code for use in this project.
     │
     ├── __init__.py             <- Makes eda a Python module
     │
-    ├── config.py               <- Store useful variables and configuration
+    ├── eda.py               <- Code to explorate data analysis module
     │
-    ├── dataset.py              <- Scripts to download or generate data
+    ├── missing_data.py              <- Code for missing data analysis
     │
-    ├── features.py             <- Code to create features for modeling
+    ├── preprocess.py             <- Code for data loading and preprocessing for forecasting reate features for modeling
     │
-    ├── modeling                
-    │   ├── __init__.py 
-    │   ├── predict.py          <- Code to run model inference with trained models          
-    │   └── train.py            <- Code to train models
+    ├── ts_trainer.py             <- Utilities for timesereis forecasting
     │
-    └── plots.py                <- Code to create visualizations
+    └── visualization.py                <- Code to create visualizations
 ```
 
 --------
-
+**Would you like any modification to this version?**
