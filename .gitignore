@@ -1,9 +1,9 @@
 # Data
-data/
+data/**
 !data/raw/Precipitation.csv
 
 #Figures
-reports/figures/
+reports/figures/**
 
 # Mac OS-specific storage files
 .DS_Store
