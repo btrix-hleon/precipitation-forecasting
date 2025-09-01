@@ -48,6 +48,6 @@ Implementation of a predictive model based of LSTM networks for precipitation ti
     │
     └── visualization.py                <- Code to create visualizations
 ```
-Would you like any modification to this version?
---------
 
+--------
+**Would you like any modification to this version?**
